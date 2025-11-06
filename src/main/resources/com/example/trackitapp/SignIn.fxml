@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #d9d9d9;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+
+    <children>
+
+        <!-- Header -->
+        <VBox alignment="CENTER" layoutX="4.0" layoutY="8.0" prefWidth="693.0" spacing="10.0">
+            <children>
+                <Label prefHeight="44.0" prefWidth="50.0" style="-fx-font-size: 36; -fx-font-weight: bold;                               -fx-text-fill: #000000;                               -fx-background-color: #b8c7d9;                               -fx-background-radius: 15;                               -fx-padding: 10 25 10 25;" text="E" />
+                <Label style="-fx-font-size: 20; -fx-font-weight: bold;" text="Expense Tracker" />
+                <Label style="-fx-font-size: 14;" text="Manage your expenses with ease" />
+            </children>
+        </VBox>
+
+        <!-- White Card (Sign In Box) -->
+        <VBox alignment="TOP_CENTER" layoutX="60.0" layoutY="151.0" prefHeight="280.0" prefWidth="580.0" spacing="10.0" style="-fx-border-color: gray;                      -fx-border-radius: 15;                      -fx-background-radius: 15;                      -fx-background-color: white;                      -fx-padding: 25;">
+
+            <children>
+
+                <!-- Title -->
+                <Label style="-fx-font-size: 17; -fx-font-weight: bold; -fx-alignment: center;" text="WELCOME BACK" />
+
+                <!-- Toggle Buttons -->
+                <HBox alignment="CENTER" spacing="10">
+                    <children>
+                        <Button prefWidth="100" style="-fx-background-color: #dfe8f3;                                        -fx-font-weight: bold;                                        -fx-background-radius: 20;" text="Sign In" />
+                        <Button prefWidth="100" style="-fx-background-color: #f1f1f1;                                        -fx-background-radius: 20;" text="Sign Up" />
+                    </children>
+                </HBox>
+
+                <!-- Input Fields -->
+                <VBox alignment="CENTER_LEFT" spacing="8.0">
+                    <children>
+                        <Label style="-fx-font-weight: bold;" text="Email" />
+                        <TextField prefWidth="300.0" promptText="Enter your email" />
+
+                        <Label style="-fx-font-weight: bold;" text="Password" />
+                        <PasswordField prefWidth="300.0" promptText="Enter your password" />
+                    </children>
+                </VBox>
+
+                <!-- Sign In Button -->
+                <Button prefWidth="150" style="-fx-background-color: #dfe8f3;                                -fx-font-weight: bold;                                -fx-background-radius: 10;                                -fx-padding: 6 10 6 10;" text="Sign In" />
+
+                <!-- Sign Up Link -->
+                <Label style="-fx-font-size: 11; -fx-text-fill: gray;" text="Don’t have an account? Click here" />
+
+            </children>
+        </VBox>
+
+        <!-- Footer (Fixed Outside the Card) -->
+        <Label alignment="CENTER" layoutX="150.0" layoutY="460.0" prefWidth="400.0" style="-fx-font-size: 10; -fx-text-fill: black;" text="By continuing, you agree to our Terms of Service and Privacy Policy" wrapText="true" />
+
+    </children>
+</AnchorPane>
