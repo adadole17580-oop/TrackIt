@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="513.0" prefWidth="759.0">
+         <children>
+            <AnchorPane layoutX="2.0" layoutY="49.0" prefHeight="466.0" prefWidth="200.0" style="-fx-background-color: white;">
+               <children>
+                  <VBox layoutX="6.0" layoutY="12.0" prefHeight="454.0" prefWidth="187.0" style="-fx-background-color: white;">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="200.0" style="-fx-background-color: transparent;" text=" Dashboard">
+                           <padding>
+                              <Insets bottom="5.0" right="45.0" top="5.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button layoutY="10.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="200.0" style="-fx-background-color: transparent;" text=" Add Expenses">
+                           <padding>
+                              <Insets bottom="5.0" right="26.0" top="5.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/2.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="47.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="200.0" style="-fx-background-color: transparent;" text="View Expenses">
+                           <padding>
+                              <Insets bottom="5.0" right="20.0" top="5.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/3.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="84.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="200.0" style="-fx-background-color: transparent;" text="Set Budgets">
+                           <padding>
+                              <Insets bottom="5.0" right="35.0" top="5.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/4.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="158.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="200.0" style="-fx-background-color: transparent;" text="Reports">
+                           <padding>
+                              <Insets bottom="5.0" right="61.0" top="5.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/5.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="158.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="200.0" style="-fx-background-color: CBDCEB;" text="Notifications">
+                           <padding>
+                              <Insets bottom="5.0" right="30.0" top="5.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/6.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="195.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="200.0" style="-fx-background-color: transparent;" text="Profile">
+                           <padding>
+                              <Insets bottom="5.0" right="68.0" top="5.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/7.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="202.0" layoutY="49.0" prefHeight="466.0" prefWidth="559.0">
+               <children>
+                  <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="261.0" prefWidth="532.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label layoutX="8.0" layoutY="-2.0" prefHeight="33.0" prefWidth="219.0" text="Notifications">
+                           <font>
+                              <Font name="Georgia Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="164.0" layoutY="115.0" text="No notifications at the moment.">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="152.0" layoutY="134.0" text="You're managing your budgets well!">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <effect>
+                        <DropShadow height="100.14" offsetX="3.0" offsetY="3.0" radius="49.57" width="100.14">
+                           <color>
+                              <Color opacity="0.3499999940395355" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="49.0" prefWidth="759.0" style="-fx-background-color: EBEBEB; -fx-border-color: CBDCEB;">
+         <children>
+            <Label layoutX="53.0" layoutY="8.0" prefHeight="33.0" prefWidth="171.0" text="Expense Tracker">
+               <font>
+                  <Font name="Georgia Bold" size="19.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="35.0" fitWidth="46.0" layoutX="10.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" style="-fx- background-radius: 30;">
+               <image>
+                  <Image url="@icons/14.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

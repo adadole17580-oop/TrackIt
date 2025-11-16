@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500" prefWidth="700" style="-fx-background-color: #d9d9d9;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="513.0" prefWidth="759.0">
+         <children>
+            <AnchorPane layoutY="49.0" prefHeight="466.0" prefWidth="200.0" style="-fx-background-color: white;">
+               <children>
+                  <VBox layoutX="6.0" layoutY="12.0" prefHeight="454.0" prefWidth="187.0" style="-fx-background-color: white;">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="200.0" style="-fx-background-color: transparent;" text=" Dashboard">
+                           <padding>
+                              <Insets bottom="5.0" right="45.0" top="5.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button layoutY="10.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="200.0" style="-fx-background-color: transparent;" text=" Add Expenses">
+                           <padding>
+                              <Insets bottom="5.0" right="26.0" top="5.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/2.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="47.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="200.0" style="-fx-background-color: transparent;" text="View Expenses">
+                           <padding>
+                              <Insets bottom="5.0" right="20.0" top="5.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/3.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="84.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="200.0" style="-fx-background-color: transparent;" text="Set Budgets">
+                           <padding>
+                              <Insets bottom="5.0" right="35.0" top="5.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/4.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="158.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="200.0" style="-fx-background-color: transparent;" text="Reports">
+                           <padding>
+                              <Insets bottom="5.0" right="61.0" top="5.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/5.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="158.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="200.0" style="-fx-background-color: transparent;" text="Notifications">
+                           <padding>
+                              <Insets bottom="5.0" right="30.0" top="5.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/6.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="195.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="200.0" style="-fx-background-color: CBDCEB;" text="Profile">
+                           <padding>
+                              <Insets bottom="5.0" right="68.0" top="5.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/7.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="198.0" layoutY="49.0" prefHeight="466.0" prefWidth="563.0">
+               <children>
+                  <AnchorPane layoutX="15.0" layoutY="45.0" prefHeight="160.0" prefWidth="530.0" style="-fx-border-radius: 6; -fx-background-color: white;">
+                     <children>
+                        <Label layoutX="8.0" prefHeight="37.0" prefWidth="219.0" text="Profile Information">
+                           <font>
+                              <Font name="Georgia Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="45.0" layoutY="120.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="134.0" style="-fx-background-color: CBDCEB;" text="Edit Profile" />
+                        <ImageView fitHeight="61.0" fitWidth="61.0" layoutX="81.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/7.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="203.0" layoutY="56.0" text="Anghel Dadole" />
+                        <Label layoutX="203.0" layoutY="103.0" text="\@gmail.com" />
+                        <Label layoutX="203.0" layoutY="125.0" text="Member since mm/dd/yr" />
+                     </children>
+                     <effect>
+                        <DropShadow height="44.45" offsetX="2.0" offsetY="2.0" radius="19.525" width="35.65">
+                           <color>
+                              <Color opacity="0.3100000023841858" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </AnchorPane>
+                  <AnchorPane layoutX="15.0" layoutY="244.0" prefHeight="131.0" prefWidth="530.0" style="-fx-background-color: white; -fx-border-radius: 5;">
+                     <children>
+                        <Label layoutX="8.0" prefHeight="37.0" prefWidth="219.0" text="Account Action">
+                           <font>
+                              <Font name="Georgia Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="14.0" layoutY="80.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="134.0" style="-fx-background-color: CBDCEB;" text="Change Password" />
+                        <Button layoutX="191.0" layoutY="80.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="134.0" style="-fx-background-color: D24444;" text="LogOut Account" textFill="WHITE" />
+                        <Button layoutX="363.0" layoutY="80.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="134.0" style="-fx-background-color: FA0202;" text="Delete Account" textFill="#f2eeee" />
+                        <Label layoutX="15.0" layoutY="37.0" text="Please be certain with your changes." />
+                     </children>
+                     <effect>
+                        <DropShadow height="44.45" offsetX="2.0" offsetY="2.0" radius="19.525" width="35.65">
+                           <color>
+                              <Color opacity="0.3100000023841858" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </AnchorPane>
+                  <AnchorPane layoutX="139.0" layoutY="166.0" prefHeight="111.0" prefWidth="307.0" style="-fx-background-color: White;">
+                     <children>
+                        <Label layoutX="7.0" layoutY="5.0" text="LogOut Account">
+                           <font>
+                              <Font name="Georgia Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="58.0" layoutY="71.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" style="-fx-background-color: D24444;" text="Yes" textFill="WHITE" />
+                        <Label layoutX="25.0" layoutY="29.0" prefHeight="33.0" prefWidth="258.0" text="Are you sure you want to logout your account?" />
+                        <Button layoutX="161.0" layoutY="71.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" style="-fx-background-color: CBDCEB;" text="No" />
+                     </children>
+                     <effect>
+                        <DropShadow height="255.0" offsetX="3.0" offsetY="3.0" radius="127.0" width="255.0">
+                           <color>
+                              <Color opacity="0.75" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="49.0" prefWidth="761.0" style="-fx-background-color: EBEBEB; -fx-border-color: CBDCEB;">
+         <children>
+            <Label layoutX="53.0" layoutY="8.0" prefHeight="33.0" prefWidth="171.0" text="Expense Tracker">
+               <font>
+                  <Font name="Georgia Bold" size="19.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="35.0" fitWidth="46.0" layoutX="10.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" style="-fx- background-radius: 30;">
+               <image>
+                  <Image url="@icons/14.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="800.0" style="-fx-background-color: #364025;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+   <children>
+      <AnchorPane layoutX="11.0" layoutY="12.0" prefHeight="521.0" prefWidth="778.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="333.0" layoutY="65.0" prefHeight="82.0" prefWidth="184.0" style="-fx-font-weight: BOLD; -fx-font-size: 20;" text="VERDANT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
