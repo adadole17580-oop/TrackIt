@@ -14,7 +14,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="513.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="513.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trackitapp.DeleteExpensesController">
    <children>
       <AnchorPane layoutY="49.0" prefHeight="466.0" prefWidth="200.0" style="-fx-background-color: white;">
          <children>
@@ -212,9 +212,9 @@
                      </font>
                   </Label>
                   <Label layoutX="16.0" layoutY="20.0" prefHeight="33.0" prefWidth="288.0" text="Are you sure you want to delete this expense?" />
-                  <Button layoutX="58.0" layoutY="71.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" style="-fx-background-color: FA0202;" text="Yes" textFill="WHITE" />
+                  <Button fx:id="yesBtn" layoutX="58.0" layoutY="71.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" style="-fx-background-color: FA0202;" text="Yes" textFill="WHITE" />
                   <Label layoutX="16.0" layoutY="38.0" prefHeight="33.0" prefWidth="258.0" text="This action cannot be undone." />
-                  <Button layoutX="154.0" layoutY="71.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" style="-fx-background-color: CBDCEB;" text="No" />
+                  <Button fx:id="noBtn" layoutX="154.0" layoutY="71.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" style="-fx-background-color: CBDCEB;" text="No" />
                </children>
                <effect>
                   <DropShadow height="255.0" radius="127.0" width="255.0">

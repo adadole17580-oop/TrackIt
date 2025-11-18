@@ -12,7 +12,7 @@
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500" prefWidth="700" style="-fx-background-color: #d9d9d9;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="500" prefWidth="700" style="-fx-background-color: #d9d9d9;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trackitapp.EditProfileController">
    <children>
       <AnchorPane prefHeight="513.0" prefWidth="759.0">
          <children>
@@ -138,7 +138,7 @@
                               <Font name="Georgia Bold" size="15.0" />
                            </font>
                         </Label>
-                        <Button layoutX="45.0" layoutY="120.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="134.0" style="-fx-background-color: CBDCEB;" text="Edit Profile" />
+                        <Button fx:id="btnEditProfile" layoutX="45.0" layoutY="120.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="134.0" style="-fx-background-color: CBDCEB;" text="Edit Profile" />
                         <ImageView fitHeight="61.0" fitWidth="61.0" layoutX="81.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@icons/7.png" />
@@ -183,7 +183,7 @@
                               <Font name="Georgia Bold" size="13.0" />
                            </font>
                         </Label>
-                        <Button layoutX="87.0" layoutY="239.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: CBDCEB;" text="Update Profile" />
+                        <Button fx:id="updateProfileBtn" layoutX="87.0" layoutY="239.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: CBDCEB;" text="Update Profile" />
                         <ImageView fitHeight="37.0" fitWidth="52.0" layoutX="135.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@icons/7.png" />

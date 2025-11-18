@@ -1,69 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.PasswordField?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.effect.DropShadow?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
+<StackPane xmlns="http://javafx.com/javafx/25"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="com.example.trackitapp.SignInController">
 
-<StackPane xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trackitapp.SignInController">
-   <children>
-      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="513.0" prefWidth="759.0">
-         <children>
-            <AnchorPane prefHeight="513.0" prefWidth="759.0">
-               <children>
-                  <ImageView fitHeight="54.0" fitWidth="60.0" layoutX="344.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@icons/14.png" />
-                     </image>
-                  </ImageView>
-                  <Label layoutX="285.0" layoutY="77.0" prefHeight="33.0" prefWidth="171.0" text="Expense Tracker">
-                     <font>
-                        <Font name="Georgia Bold" size="19.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="281.0" layoutY="110.0" text="Manage your expenses with ease!" />
-                  <Label layoutX="193.0" layoutY="482.0" text="By continuing, you agree to our Terms of Service and Privacy Policy" />
-                  <AnchorPane layoutX="115.0" layoutY="145.0" prefHeight="318.0" prefWidth="522.0" style="-fx-background-color: white;">
-                     <children>
-                        <Label layoutX="203.0" prefHeight="33.0" prefWidth="116.0" text="Welcome Back">
-                           <font>
-                              <Font name="Georgia Bold" size="14.0" />
-                           </font>
+    <children>
+        <AnchorPane prefHeight="513.0" prefWidth="759.0">
+
+            <children>
+                <AnchorPane prefHeight="513.0" prefWidth="759.0">
+
+                    <children>
+
+                        <ImageView fx:id="appLogo" fitHeight="54.0" fitWidth="60.0"
+                                   layoutX="344.0" layoutY="14.0" preserveRatio="true">
+                            <image>
+                                <Image url="@icons/14.png"/>
+                            </image>
+                        </ImageView>
+
+                        <Label layoutX="285.0" layoutY="77.0" text="Expense Tracker">
+                            <font>
+                                <Font name="Georgia Bold" size="19.0"/>
+                            </font>
                         </Label>
-                        <Button alignment="BASELINE_LEFT" layoutX="148.0" layoutY="31.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="221.0" style="-fx-background-color: CBDCEB;" />
-                        <Button fx:id="goToSignUpBtn" layoutX="262.0" layoutY="35.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: CBDCEB;" text="SignUp" />
-                        <Button fx:id="signInBtn" layoutX="161.0" layoutY="35.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="101.0" style="-fx-background-color: white;" text="SignIn" />
-                        <Label layoutX="58.0" layoutY="83.0" text="Email" />
-                        <Label layoutX="58.0" layoutY="151.0" text="Password" />
-                        <Button layoutX="182.0" layoutY="241.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="153.0" style="-fx-background-color: CBDCEB;" text="Sign In" />
-                        <Label layoutX="173.0" layoutY="266.0" />
-                        <Button layoutX="157.0" layoutY="262.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="204.0" style="-fx-background-color: transparent;" text="Don't have an account? Click here.">
-                           <font>
-                              <Font size="10.0" />
-                           </font>
-                        </Button>
-                        <TextField fx:id="emailField" layoutX="73.0" layoutY="100.0" prefHeight="33.0" prefWidth="355.0" />
-                        <PasswordField fx:id="passwordField" layoutX="73.0" layoutY="168.0" prefHeight="33.0" prefWidth="355.0" />
-                     </children>
-                     <effect>
-                        <DropShadow height="100.14" offsetX="3.0" offsetY="3.0" radius="49.57" width="100.14">
-                           <color>
-                              <Color opacity="0.3499999940395355" />
-                           </color>
-                        </DropShadow>
-                     </effect>
-                  </AnchorPane>
-               </children>
-            </AnchorPane>
-         </children>
-      </AnchorPane>
-   </children>
+
+                        <Label layoutX="281.0" layoutY="110.0" text="Manage your expenses with ease!"/>
+
+                        <Label layoutX="193.0" layoutY="482.0"
+                               text="By continuing, you agree to our Terms of Service and Privacy Policy"/>
+
+                        <AnchorPane layoutX="115.0" layoutY="145.0"
+                                    prefHeight="318.0" prefWidth="522.0"
+                                    style="-fx-background-color: white;">
+
+                            <children>
+
+                                <Label layoutX="203.0" text="Welcome Back">
+                                    <font>
+                                        <Font name="Georgia Bold" size="14.0"/>
+                                    </font>
+                                </Label>
+
+                                <Button fx:id="tabBgBtn" layoutX="148.0" layoutY="31.0"
+                                        prefHeight="33.0" prefWidth="221.0"
+                                        style="-fx-background-color: CBDCEB;"/>
+
+                                <Button fx:id="goToSignUpBtn" layoutX="262.0" layoutY="35.0"
+                                        prefHeight="25.0" prefWidth="95.0"
+                                        style="-fx-background-color: CBDCEB;"
+                                        text="SignUp"/>
+
+                                <Button fx:id="signInBtn" layoutX="161.0" layoutY="35.0"
+                                        prefHeight="25.0" prefWidth="101.0"
+                                        style="-fx-background-color: white;"
+                                        text="SignIn"/>
+
+                                <Label layoutX="58.0" layoutY="83.0" text="Email"/>
+                                <Label layoutX="58.0" layoutY="151.0" text="Password"/>
+
+                                <Button fx:id="submitSignInBtn" layoutX="182.0" layoutY="241.0"
+                                        prefHeight="25.0" prefWidth="153.0"
+                                        style="-fx-background-color: CBDCEB;"
+                                        text="Sign In"/>
+
+                                <Button fx:id="goToRegisterLink" layoutX="157.0" layoutY="262.0"
+                                        prefHeight="25.0" prefWidth="204.0"
+                                        style="-fx-background-color: transparent;"
+                                        text="Don't have an account? Click here.">
+                                    <font>
+                                        <Font size="10.0"/>
+                                    </font>
+                                </Button>
+
+                                <TextField fx:id="emailField" layoutX="73.0" layoutY="100.0"
+                                           prefHeight="33.0" prefWidth="355.0"/>
+
+                                <PasswordField fx:id="passwordField" layoutX="73.0" layoutY="168.0"
+                                               prefHeight="33.0" prefWidth="355.0"/>
+
+                            </children>
+
+                            <effect>
+                                <DropShadow height="100.14" offsetX="3.0"
+                                            offsetY="3.0" radius="49.57" width="100.14">
+                                    <color>
+                                        <Color opacity="0.35"/>
+                                    </color>
+                                </DropShadow>
+                            </effect>
+
+                        </AnchorPane>
+
+                    </children>
+
+                </AnchorPane>
+
+            </children>
+
+        </AnchorPane>
+    </children>
+
 </StackPane>

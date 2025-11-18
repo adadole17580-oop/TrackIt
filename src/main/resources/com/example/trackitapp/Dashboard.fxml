@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<StackPane xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trackitapp.DashboardController">
    <children>
       <AnchorPane prefHeight="513.0" prefWidth="759.0">
          <children>
@@ -33,7 +33,7 @@
                <children>
                   <VBox layoutX="6.0" layoutY="12.0" prefHeight="454.0" prefWidth="187.0" style="-fx-background-color: white;">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="200.0" style="-fx-background-color: CBDCEB;" text=" Dashboard">
+                        <Button fx:id="dashboardBtn" mnemonicParsing="false" prefHeight="37.0" prefWidth="200.0" style="-fx-background-color: CBDCEB;" text=" Dashboard">
                            <padding>
                               <Insets bottom="5.0" right="45.0" top="5.0" />
                            </padding>
@@ -48,7 +48,7 @@
                               <Font size="14.0" />
                            </font>
                         </Button>
-                        <Button layoutY="10.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="200.0" style="-fx-background-color: transparent;" text=" Add Expenses">
+                        <Button fx:id="addExpensesBtn" layoutY="10.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="200.0" style="-fx-background-color: transparent;" text=" Add Expenses">
                            <padding>
                               <Insets bottom="5.0" right="26.0" top="5.0" />
                            </padding>
@@ -63,7 +63,7 @@
                               <Font size="14.0" />
                            </font>
                         </Button>
-                        <Button layoutX="10.0" layoutY="47.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="200.0" style="-fx-background-color: transparent;" text="View Expenses">
+                        <Button fx:id="viewExpensesBtn" layoutX="10.0" layoutY="47.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="200.0" style="-fx-background-color: transparent;" text="View Expenses">
                            <padding>
                               <Insets bottom="5.0" right="20.0" top="5.0" />
                            </padding>
@@ -78,7 +78,7 @@
                               <Font size="14.0" />
                            </font>
                         </Button>
-                        <Button layoutX="10.0" layoutY="84.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="200.0" style="-fx-background-color: transparent;" text="Set Budgets">
+                        <Button fx:id="setBudgetsBtn" layoutX="10.0" layoutY="84.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="200.0" style="-fx-background-color: transparent;" text="Set Budgets">
                            <padding>
                               <Insets bottom="5.0" right="35.0" top="5.0" />
                            </padding>
@@ -93,7 +93,7 @@
                               <Font size="14.0" />
                            </font>
                         </Button>
-                        <Button layoutX="10.0" layoutY="158.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="200.0" style="-fx-background-color: transparent;" text="Reports">
+                        <Button fx:id="reportsBtn" layoutX="10.0" layoutY="158.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="200.0" style="-fx-background-color: transparent;" text="Reports">
                            <padding>
                               <Insets bottom="5.0" right="61.0" top="5.0" />
                            </padding>
@@ -108,7 +108,7 @@
                               <Font size="14.0" />
                            </font>
                         </Button>
-                        <Button layoutX="10.0" layoutY="158.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="200.0" style="-fx-background-color: transparent;" text="Notifications">
+                        <Button fx:id="notificationsBtn" layoutX="10.0" layoutY="158.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="200.0" style="-fx-background-color: transparent;" text="Notifications">
                            <padding>
                               <Insets bottom="5.0" right="30.0" top="5.0" />
                            </padding>
@@ -123,7 +123,7 @@
                               <Font size="14.0" />
                            </font>
                         </Button>
-                        <Button layoutX="10.0" layoutY="195.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="200.0" style="-fx-background-color: transparent;" text="Profile">
+                        <Button fx:id="profileBtn" layoutX="10.0" layoutY="195.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="200.0" style="-fx-background-color: transparent;" text="Profile">
                            <padding>
                               <Insets bottom="5.0" right="68.0" top="5.0" />
                            </padding>
@@ -209,22 +209,22 @@
                   <AnchorPane layoutX="165.0" layoutY="129.0" prefHeight="78.0" prefWidth="211.0" style="-fx-background-color: white;">
                      <children>
                         <Label layoutX="66.0" layoutY="6.0" text="Quick Action" />
-                        <Button layoutX="12.0" layoutY="23.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="91.0" style="-fx-background-color: CBDCEB;" text="Add New Expenses">
+                        <Button fx:id="addNewExpensesBtn" layoutX="12.0" layoutY="23.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="91.0" style="-fx-background-color: CBDCEB;" text="Add New Expenses">
                            <font>
                               <Font size="9.0" />
                            </font>
                         </Button>
-                        <Button layoutX="111.0" layoutY="22.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="91.0" style="-fx-background-color: CBDCEB;" text="Update Budget">
+                        <Button fx:id="updateBudgetBtn" layoutX="111.0" layoutY="22.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="91.0" style="-fx-background-color: CBDCEB;" text="Update Budget">
                            <font>
                               <Font size="9.0" />
                            </font>
                         </Button>
-                        <Button layoutX="12.0" layoutY="51.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="91.0" style="-fx-background-color: CBDCEB;" text="View Reports">
+                        <Button fx:id="viewReportsBtn" layoutX="12.0" layoutY="51.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="91.0" style="-fx-background-color: CBDCEB;" text="View Reports">
                            <font>
                               <Font size="9.0" />
                            </font>
                         </Button>
-                        <Button layoutX="111.0" layoutY="51.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="91.0" style="-fx-background-color: CBDCEB;" text="View Expenses">
+                        <Button fx:id="viewExpensesQuickBtn" layoutX="111.0" layoutY="51.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="91.0" style="-fx-background-color: CBDCEB;" text="View Expenses">
                            <font>
                               <Font size="9.0" />
                            </font>
